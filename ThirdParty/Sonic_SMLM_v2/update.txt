@@ -1,0 +1,3 @@
+1. intergrated background correction module
+2. intergrated overlaping emitter removal module
+3. can process multiple data now. Thanks Shengjie, he fixed the memmory leak issue.
