@@ -9,7 +9,13 @@ function resolution = EstimateResolution(img)
     image = apodImRect(image,20);
     % compute resolution
     
-    [kcMax,A0] = getDcorr(gpuArray(image),r,Ng); gpuDevice(1);
+
+    if gpuDeviceCount > 0
+        imgForCorr = gpuArray(image);
+    else
+        imgForCorr = image;
+    end
+    [kcMax,A0] = getDcorr(imgForCorr, r, Ng);
 
     resolution = 2 / kcMax;
 end

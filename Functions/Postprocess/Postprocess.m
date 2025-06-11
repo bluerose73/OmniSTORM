@@ -1,9 +1,13 @@
 function result = Postprocess(inputImage, config)
     result = inputImage;
+    % disp("pre-adjust");
+    % disp(class(inputImage));
+    % disp(max(result, [], "all"));
+    % disp(min(result, [], "all"));
     if config.postprocess.adjustContrast
-        result = double(result);
-        result = max(result, 0);
-        result = result / max(result, [], "all");
         result = imadjust(result);
     end
+    % disp("Post-adjust");
+    % disp(max(result, [], "all"));
+    % disp(min(result, [], "all"));
 end

@@ -13,4 +13,8 @@ function result = ProcessDeconvolution(inputImage, config)
         result = final_sr_img.std;
     end
 
+    result = result / max(result, [], "all");
+    result = imadjust(result);
+    result = uint16(result * 65535);
+
 end

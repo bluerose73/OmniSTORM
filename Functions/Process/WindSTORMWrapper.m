@@ -1,5 +1,6 @@
 function [X, Y, F, intensity] = WindSTORMWrapper(inputImage, background, config)
-    inputImage = double(inputImage);
+    inputImage = single(inputImage);
+    background = single(background);
     Sigma = config.params.resolutionPx / 2.35;
     minIntensity = config.params.threshold * 2 * pi * Sigma * Sigma;
 

@@ -31,3 +31,9 @@ codegen/
 octave-workspace
 
 data
+
+/simulation
+*.tif
+*.csv
+*.zip
+*.png

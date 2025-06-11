@@ -1,15 +1,13 @@
-function result = RenderLocalizationToImage(X, Y, F, intensity, imSize, config)
+function result = RenderLocalizationToImage(X, Y, F, intensity, height, width, config)
     % TODO: assumes square image
     zoom = config.process.scale;
     
-    X(X>imSize) = imSize;
+    X(X>height) = height;
     X(X<1) = 1;
-    Y(Y>imSize) = imSize;
+    Y(Y>width) = width;
     Y(Y<1) = 1;
     
-    imSR = zeros(imSize*zoom,imSize*zoom);
-
-    result = imSR;
+    imSR = zeros(height*zoom,width*zoom, "uint16");
 
     for n=1:length(X)
         if isnan(X(n)) || isnan(Y(n))
