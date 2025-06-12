@@ -5,7 +5,7 @@ OmniSTORM is a MATLAB app for STORM super-resolution microscopy, featuring a GUI
 
 ## How to Use
 
-1. Add `Functions` and `ThirdParty` to MATLAB PATH
+1. Add `Functions` and `ThirdParty` and subfolders to MATLAB PATH
 2. Double-click OmniSTORM.mlapp in the file explorer, or open it in MATLAB.
 3. Click "Load Image" if the raw image is a single file; Click "Load Multi-File Image" if the image are multiple files in a folder. Supported format: TIFF and DCIMG.
 4. Click "Run".
