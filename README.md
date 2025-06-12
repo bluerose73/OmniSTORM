@@ -30,3 +30,7 @@ OmniSTORM is based on the following research and open-source projects:
 - [Parameter-free image resolution estimation based on decorrelation analysis](https://www.nature.com/articles/s41592-019-0515-7)
 - [Single image Fourier Ring Correlation (1frc)](https://pubmed.ncbi.nlm.nih.gov/38859523/)
 - [cellSTORM - Cost-effective Super-Resolution on a Cellphone using dSTORM](https://arxiv.org/abs/1804.06244)
+
+OmniSTORM also depends on the following GitHub repositories developed by the author:
+- [dcimg-reader](https://github.com/bluerose73/dcimg-reader): DCIMG image reader MEX function
+- [sonic-cuda](https://github.com/bluerose73/sonic-cuda): GPU-accelerated localization-based super-resolution MEX function
