@@ -2,16 +2,23 @@
 
 OmniSTORM is a MATLAB app for STORM super-resolution microscopy, featuring a GUI and GPU acceleration.
 
+The GPU acceleration only supports Windows platform and Nvidia GPUs.
 
-## How to Use
+
+## Install
+
+OmniSTORM requires MATLAB R2024a or higher.
+
+Download `OmniSTORM-vXX.mlappinstall` from Releases and run it.
+
+
+## Run from Source
 
 1. Add `Functions` and `ThirdParty` and subfolders to MATLAB PATH
 2. Double-click OmniSTORM.mlapp in the file explorer, or open it in MATLAB.
 3. Click "Load Image" if the raw image is a single file; Click "Load Multi-File Image" if the image are multiple files in a folder. Supported format: TIFF and DCIMG.
 4. Click "Run".
 5. If the number of emitters are too many or too few, adjust the `Threshold`.
-
-The GPU acceleration only supports Windows platform and Nvidia GPUs.
 
 
 ## Credits
