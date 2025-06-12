@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4243135765" file="C:\Users\bluerose73\Desktop\omnistorm\OmniSTORM.prj" location="C:\Users\bluerose73\Desktop\omnistorm" name="OmniSTORM" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1104895915" file="E:\omnistorm\OmniSTORM.prj" location="E:\omnistorm" name="OmniSTORM" target="target.mlapps" target-name="Package App">
     <param.appname>OmniSTORM</param.appname>
     <param.authnamewatermark>Shengjie Ma, Hongqiang Ma</param.authnamewatermark>
     <param.email />
@@ -8,14 +8,12 @@
     <param.icons />
     <param.summary>Configuration-free super-resolution microscopy.</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\bluerose73\AppData\Local\Temp\tp9fb71376_05db_4eef_9604_20cf8343470c.png</param.screenshot>
+    <param.screenshot>C:\Users\bluerose73\AppData\Local\Temp\tp10fa2e24_9914_41a1_b461_dba623b40d08.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
-    <param.platforms>
-      <item>win64</item>
-    </param.platforms>
+    <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>a2ece812-cf16-4d50-99ba-9ca019fc192d</param.guid>
     <unset>
@@ -28,163 +26,20 @@
       <param.products.name />
       <param.products.id />
       <param.products.version />
+      <param.platforms />
       <param.output />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\OmniSTORM.mlapp</file>
     </fileset.main>
-    <fileset.depfun>
-      <file>${PROJECT_ROOT}\ThirdParty\1frc\GLS.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\1frc\noisevariance.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\1frc\pcfo.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\1frc\RWLSPoisson.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\1frc\symmetrize.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\cellSTORM-MATLAB\Functions\FSC.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\cellSTORM-MATLAB\Functions\kaiser_bessel.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\deconv_temporalstd.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\io\read_dcimg.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\io\read_img_auto.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\io\read_tiff.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\io\save_tiff.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\my_deconvolution.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\my_interpolate.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\diffsr\pairwise_frame_difference.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\apodImRect.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\getCorrcoef.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\getDcorr.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\getDcorrLocalMax.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\getRadAvg.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\im2pol.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\ImDecorr\funcs\linmap.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\Sonic_SMLM_v2\AIM\AIM.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\Sonic_SMLM_v2\AIM\IntersectionMax.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\Sonic_SMLM_v2\AIM\IntersectionMaxZ.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\Sonic_SMLM_v2\Sonic\Sonic_clean.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\Sonic_SMLM_v2\Sonic\Sonic_localization.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\Sonic_SMLM_v2\Sonic\Sonic_ROI.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\WindSTORM_MATLAB\functions\BgSub.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\WindSTORM_MATLAB\functions\ExtractROIs.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\WindSTORM_MATLAB\functions\GradientFit.m</file>
-      <file>${PROJECT_ROOT}\ThirdParty\WindSTORM_MATLAB\functions\WindDeconv.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\all.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\any.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\besselj.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\bessely.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\circshift.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\clone.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\colorspace.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\complex.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\convhull.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\cumsum.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\curl.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\diag.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\dip_image.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\divergence.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\eig.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\eye.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\find.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\findcoord.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\gradient.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\ind2sub.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\iterate.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\max.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\mean.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\median.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\min.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\percentile.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\plot.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\private\colorspacemanager.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\private\dip_imagemath.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\private\dip_operators.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\private\dip_projection.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\private\dip_tensor_indices.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\prod.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\rotate.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\slice_ex.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\slice_in.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\slice_op.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\std.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\sub2ind.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\sum.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\svd.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\tensorfun.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\@dip_image\var.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\abssqr.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\berosion.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\coordinates.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\curlvector.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipanimate.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipclf.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipfig.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipgetimage.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipgetpref.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipisosurface.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\diplink.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\diplooking.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipmapping.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dippan.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipsetpref.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipshow.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipstep.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\diptest.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\diptruesize.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\dipzoom.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\divergencevector.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\ft.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\gaussf.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\getmaximumandminimum.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\gradientvector.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\ift.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\integral_image.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\joinchannels.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\mat2im.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\newim.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\newtensorim.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dip_fileio.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dip_filtering.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dip_generation.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dip_geometry.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dip_math.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dip_morphology.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_clear_state.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_getbordersize.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_getcurpos.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_isnormalaspect.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_set_action_check.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_setpointer.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dipfig_titlebar.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\dippreferences.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\getfigh.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\handlelist.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\handleselect.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\imagedisplay.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\internal_ramp.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\is_valid_varname.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\isfigh.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\isfighlist.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\label_colormap.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\nicelut.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\numberofthreads.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\saturation_colormap.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\useshg2.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\private\zerobased_colormap.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\rr.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\splitim.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\view5d.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\viewslice.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\viewslice.mexw64</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\wrap.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\writeics.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\xx.m</file>
-      <file>C:\Users\bluerose73\Desktop\software\diplib\share\DIPimage\yy.m</file>
-    </fileset.depfun>
+    <fileset.depfun />
     <fileset.resources>
       <file>${PROJECT_ROOT}\Functions</file>
       <file>${PROJECT_ROOT}\ThirdParty</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\bluerose73\Desktop" name="omnistorm" optional="false">C:\Users\bluerose73\Desktop\omnistorm</file>
+      <file location="E:\" name="omnistorm" optional="false">E:\omnistorm</file>
     </build-deliverables>
     <workflow />
     <matlab>
