@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1104895915" file="E:\omnistorm\OmniSTORM.prj" location="E:\omnistorm" name="OmniSTORM" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3587157588" file="E:\bioe\omnistorm\OmniSTORM.prj" location="E:\bioe\omnistorm" name="OmniSTORM" target="target.mlapps" target-name="Package App">
     <param.appname>OmniSTORM</param.appname>
     <param.authnamewatermark>Shengjie Ma, Hongqiang Ma</param.authnamewatermark>
     <param.email />
@@ -8,8 +8,8 @@
     <param.icons />
     <param.summary>Configuration-free super-resolution microscopy.</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\bluerose73\AppData\Local\Temp\tp10fa2e24_9914_41a1_b461_dba623b40d08.png</param.screenshot>
-    <param.version>1.0</param.version>
+    <param.screenshot>C:\Users\bluerose73\AppData\Local\Temp\tpc45b8fbb_be98_4782_9632_c2b1b6660d6a.png</param.screenshot>
+    <param.version>0.6</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
@@ -22,7 +22,6 @@
       <param.icon />
       <param.icons />
       <param.description />
-      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />
@@ -39,7 +38,7 @@
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="E:\" name="omnistorm" optional="false">E:\omnistorm</file>
+      <file location="E:\bioe" name="omnistorm" optional="false">E:\bioe\omnistorm</file>
     </build-deliverables>
     <workflow />
     <matlab>

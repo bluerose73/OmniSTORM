@@ -54,10 +54,10 @@ classdef OmniPipeline < handle
 
             if config.params.range.enabled
                 % Create a new OmniImageLoaderRangeView object
-                obj.imageLoader = OmniImageLoaderRangeView(imageLoader, config.params.range.start, config.params.range.end);
+                obj.imageLoader = OmniImageLoaderRangeView(imageLoader, config.params.range.start, config.params.range.finale);
                 disp("Using a range view of the image loader");
                 disp("Start frame: " + config.params.range.start);
-                disp("End frame: " + config.params.range.end);
+                disp("End frame: " + config.params.range.finale);
             else
                 % Use the original image loader
                 obj.imageLoader = imageLoader;

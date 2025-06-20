@@ -1,5 +1,4 @@
-classdef OmniImageLoader < handle
-    %OMNIIMAGELOADER An image stack loader class.
+classdef OmniImageLoader < handle    %OMNIIMAGELOADER An image stack loader class.
     %   Supports:
     %   - single-file and multi-file image stack.
     %   - TIFF and DCIMG formats.
@@ -18,6 +17,11 @@ classdef OmniImageLoader < handle
     %   imageStack = loader.readFrameRange(1, totalFrames)
     %   % Load frames 100 - 200
     %   imageStack = loader.readFrameRange(100, 100)
+    %   
+    %   % Open folder with specific extensions
+    %   loader.openImageFolder('/path/to/folder', {'.tif', '.jpg'})
+    %   % or
+    %   loader.openImageFolder('/path/to/folder', [".tif", ".jpg"])
     
     properties
         height
@@ -35,19 +39,47 @@ classdef OmniImageLoader < handle
             obj.numFramesList = obj.totalFrames;
         end
 
-        function openImageFolder(obj, folderPath)
-            % Get list of all .tif and .dcimg files in the selected directory
-            tif_files = dir(fullfile(folderPath, '*.tif'));
-            dcimg_files = dir(fullfile(folderPath, '*.dcimg'));
+        function openImageFolder(obj, folderPath, ext_name_list)
+            % Get list of files with specified extensions in the selected directory
+            % ext_name_list: cell array of extensions (e.g., {'.tif', '.tiff', '.dcimg'})
+            %               or string array (e.g., [".tif", ".tiff", ".dcimg"])
+            %               If not provided, defaults to {'.tif', '.tiff', '.dcimg'}
             
-            % Combine the file structs and sort by filename
-            all_files = [tif_files; dcimg_files];
-            [~, idx] = sort({all_files.name});
-            all_files = all_files(idx);
+            if nargin < 3 || isempty(ext_name_list)
+                ext_name_list = {'.tif', '.tiff', '.dcimg'};
+            end
+            
+            % Convert to cell array if string array is provided
+            if isstring(ext_name_list)
+                ext_name_list = cellstr(ext_name_list);
+            end
+            
+            % Ensure extensions start with a dot
+            for i = 1:length(ext_name_list)
+                if ~startsWith(ext_name_list{i}, '.')
+                    ext_name_list{i} = ['.' ext_name_list{i}];
+                end
+            end
+            
+            % Get files for each extension
+            all_files = [];
+            for i = 1:length(ext_name_list)
+                ext = ext_name_list{i};
+                pattern = ['*' ext];
+                files = dir(fullfile(folderPath, pattern));
+                all_files = [all_files; files];
+            end
+            
+            % Sort by filename
+            if ~isempty(all_files)
+                [~, idx] = sort({all_files.name});
+                all_files = all_files(idx);
+            end
 
             % Check if there are no images
             if isempty(all_files)
-                error('No .tif or .dcimg images found in the selected directory.');
+                ext_list_str = strjoin(ext_name_list, ', ');
+                error('No images with extensions [%s] found in the selected directory.', ext_list_str);
             end
 
             % Get full paths of all image files
